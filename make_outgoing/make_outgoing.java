@@ -18,7 +18,7 @@ public class phone extends HttpServlet {
         response.setContentType("text/html");
         request.setAttribute("username", username);
         request.setAttribute("password", password);
-        RequestDispatcher view = request.getRequestDispatcher("phone.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("make_outgoing.jsp");
         view.forward(request, response);
     }
 }
