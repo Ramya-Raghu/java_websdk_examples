@@ -11,7 +11,7 @@ import java.io.IOException;
 public class phone extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        // Forward the token information to a JSP view
+        // Invoke the JSP file
         response.setContentType("text/html");
         RequestDispatcher view = request.getRequestDispatcher("phone.jsp");
         view.forward(request, response);

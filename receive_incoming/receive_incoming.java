@@ -14,7 +14,7 @@ public class phone extends HttpServlet {
         String username = "Your SIP ENdpoint username";
         String password = "Your SIP ENdpoint Password";
 
-        // Forward the token information to a JSP view
+        // Forward the username and password information to a JSP view
         response.setContentType("text/html");
         request.setAttribute("username", username);
         request.setAttribute("password", password);
